@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>History</title>
+    <style>
+      body {
+        background: #f6f8fd;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="navLeft">
+        <img src="assets/img/logo.svg" alt="">
+        <div class="logoName">KIOSGAMES</div>
+      </div>
+      <div class="navRight">
+        <div class="navSearch">
+          <input type="text" placeholder="Cari Game">
+          <i class="bi bi-search"></i>
+        </div>
+        <a href="#" class="btnYellowPrimary login">Masuk</a>
+        <div class="containerMenu">
+          <div class="dropdown">
+            <button class="dropdownMenu">
+              <i class="bi bi-grid-fill"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="">
+                <div class="containers">
+                  <i class="bi bi-house-heart-fill"></i>
+                  <div class="name">Beranda</div>
+                </div>
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="">
+                <div class="containers">
+                  <i class="bi bi-controller"></i>
+                  <div class="name">Product</div>
+                </div>
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="">
+                <div class="containers">
+                  <i class="bi bi-bag-check"></i>
+                  <div class="name">Lacak Pesanan</div>
+                </div>
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="">
+                <div class="containers">
+                  <i class="bi bi-newspaper"></i>
+                  <div class="name">Blog</div>
+                </div>
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div> -->
+    </nav>  
+    <section class="history">
+      <div class="containerHead">
+        <img src="assets/img/history/user.png" alt="" class="user">
+        <div class="identity">
+          <div class="name">Hi, Hendra Sugandi <img src="assets/img/history/greet.svg" alt=""></div>
+          <div class="desc">Gold Member - Sejak 2022</div>
+        </div>
+      </div>
+      <div class="cards mt-4">
+        <div class="containerSaldo">
+          <div class="icon">
+            <img src="assets/img/history/dompet.svg" alt="">
+          </div>
+          <div class="desc">Saldo Kamu</div>
+          <div class="price">Rp. 120.000.000</div>
+        </div>
+        <ul class="nav hisTabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="btnHisTabs" id="isi-tab" data-bs-toggle="tab" data-bs-target="#isi" type="button" role="tab">
+              <i class="bi bi-folder-plus"></i>
+              <div class="text">isi Saldo</div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btnHisTabs" id="topup-tab" data-bs-toggle="tab" data-bs-target="#topup" type="button" role="tab">
+              <i class="bi bi-gem"></i>
+              <div class="text">Topup</div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btnHisTabs active" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab">
+              <i class="bi bi-clock-history"></i>
+              <div class="text">History</div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btnHisTabs" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting" type="button" role="tab">
+              <i class="bi bi-person-fill-gear"></i>
+              <div class="text">Setting</div>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="cards mt-10">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade" id="isi" role="tabpanel">
+            Tidak Ada Konten
+          </div>
+          <div class="tab-pane fade" id="topup" role="tabpanel">
+            Tidak Ada Konten
+          </div>
+          <div class="tab-pane fade show active" id="history" role="tabpanel">
+            <div class="containerHis">
+              <div class="head">
+                <div class="title">Riwayat Transaksi</div>
+                <a href="" class="filter">
+                  <i class="bi bi-funnel-fill"></i>
+                </a>
+              </div>
+              <div class="contents">
+                <a href="" class="transaksi">
+                  <div class="containers">
+                    <div class="icon plus">
+                      <img src="assets/img/history/dompet-plus.svg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="date"><span>25 June 2023</span> - Topup saldo</div>
+                      <div class="price plus">+Rp. 500.000</div>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="" class="transaksi">
+                  <div class="containers">
+                    <div class="icon min">
+                      <img src="assets/img/history/dompet-min.svg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="date"><span>25 June 2023</span> - Topup saldo</div>
+                      <div class="price min">-Rp. 30.000</div>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="setting" role="tabpanel">
+            Tidak Ada Konten
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="">
+        <div class="names">KIOSGAMES</div>
+      </div>
+      <div class="desc">Automasuk adalah jasa topup game online mlbb, ff, steam dan lainnya. Tersedia top up voucher game pc, dan isi pulsa paling murah di Indonesia</div>
+      <div class="sosmed">
+        <a href="" class="containers">
+          <img src="assets/img/footer/fb.svg" alt="">
+        </a>
+        <a href="" class="containers">
+          <img src="assets/img/footer/ig.svg" alt="">
+        </a>
+        <a href="" class="containers">
+          <img src="assets/img/footer/yt.svg" alt="">
+        </a>
+      </div>
+      <div class="bottomFoot">
+        <div class="copyright">
+          <div class="text">Copyright © 2023 AUTOMASUK.ID - All Right Reserved</div>
+        </div>
+        <div class="linkFoot">
+          <div class="containers">
+            <a href="">Home</a>
+            <a href="">Topup</a>
+            <a href="">Persyaratan Umum</a>
+            <a href="">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobileNav">
+      <a href="" class="containers active">
+        <i class="bi bi-house-heart-fill"></i>
+        <div class="text">Beranda</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-controller"></i>
+        <div class="text">Product</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-bag-check"></i>
+        <div class="text">Lacak</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-newspaper"></i>
+        <div class="text">Blog</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-person-lock"></i>
+        <div class="text">Login</div>
+      </a>
+    </div>
+  </section>
+    <!-- MODAL -->
+    <div class="modal fade" id="checkout">
+      <div class="modal-dialog modal-dialog-centered" style="max-width:900px">
+        <div class="modal-content py-5">
+          <button type="button" class="btn-close" onclick="showRate()"></button>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ticketBarcode">
+                <img src="assets/img/logo.svg" alt="" class="logo">
+                <div class="gameNm">Mobile Legend</div>
+                <div class="diamond">328 Diamonds</div>
+                <div class="price">Rp 500.000,-</div>
+                <img src="assets/img/pay/barcode.svg" alt="" class="barcode">
+                <div class="desc">
+                  <div class="text">Menerima pembayaran melalui aplikasi dibawah ini </div>
+                  <div class="logoPay">
+                    <img src="assets/img/pay/dana.svg" alt="">
+                    <img src="assets/img/pay/ovo.svg" alt="">
+                    <img src="assets/img/pay/shopeepay.svg" alt="">
+                    <img src="assets/img/pay/gopay.svg" alt="" style="width: 65px;">
+                  </div>
+                  <div class="text">Dan merchant lain yang menerima pembayaran QRIS</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ticketDetail">
+                <div class="head">Detail Pembelian</div>
+                <div class="containers">
+                  <div class="title">Order ID</div>
+                  <div class="desc">1</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Tanggal</div>
+                  <div class="desc">25 January 2023 - 03:00</div>
+                </div>
+                <div class="containers">
+                  <div class="title">ID Player</div>
+                  <div class="desc">332100185</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Nickname</div>
+                  <div class="desc">xsugandi</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Games</div>
+                  <div class="desc">Mobile Legends</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Produk</div>
+                  <div class="desc">500 Diamonds</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Price</div>
+                  <div class="desc">Rp 500.000,-</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Status</div>
+                  <div class="desc txt-primary">Pending</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Keterangan</div>
+                  <div class="desc">-</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Metode Pembayaran</div>
+                  <div class="desc"><img src="assets/img/pay/qris.svg" alt=""></div>
+                </div>
+                <div class="containers">
+                  <div class="title">Total Harga</div>
+                  <div class="desc txt-primary">Rp 500.000,-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="rate">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content pt-5 pb-4" style="border-radius:20px">
+          <div class="containerRate">
+            <img src="assets/img/logo.svg" alt="" class="logo">
+            <div class="title">Bagaimana kemudahan dalam bertransaksi di kiosgame..?</div>
+            <div class="emoji">
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-1">
+                <label for="emoji-1" class="choiceEmoji">
+                  <img src="assets/img/emoji/1.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-2">
+                <label for="emoji-2" class="choiceEmoji">
+                  <img src="assets/img/emoji/2.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-3">
+                <label for="emoji-3" class="choiceEmoji">
+                  <img src="assets/img/emoji/3.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-4">
+                <label for="emoji-4" class="choiceEmoji">
+                  <img src="assets/img/emoji/4.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-5">
+                <label for="emoji-5" class="choiceEmoji">
+                  <img src="assets/img/emoji/5.svg" alt="">
+                </label>
+              </div>
+            </div>
+            <div class="floating-label-content mb-3">
+              <textarea class="form-control floating-input" name="" id="ulasan" placeholder=" " style="min-height:140px"></textarea>
+              <label class="floating-label" for="ulasan">Tulis Ulasan Kamu</label>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+              <a href="" class="btnGrey py-4">Kembali</a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="btnYellowPrimary py-4">Kirim</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    function showRate() {
+      $('#checkout').modal('hide')
+      $('#rate').modal('show')
+    }
+    var swiper = new Swiper(".swiperBanner", {
+      slidesPerView: 1.5, 
+      centeredSlides: true,
+      slidesPerGroup: 1,
+      loop: true,
+      slideToClickedSlide: true,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 4000,
+      },
+      breakpoints: {
+        950: {
+          slidesPerView: 1.5,
+          centeredSlides: true,
+        },
+        300: {
+          slidesPerView: 1.2,
+          centeredSlides: true,
+        },
+      },
+    });
+    
+    var swiper = new Swiper(".swiperFlashSale", {
+      slidesPerView: 4, 
+      loop: true,
+      slideToClickedSlide: true,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      autoplay: {
+        delay: 4000,
+      },
+      breakpoints: {
+        1000: {
+          slidesPerView: 4,
+        },
+        800: {
+          slidesPerView: 3,
+        },
+        400: {
+          slidesPerView: 1.5,
+        },
+        200: {
+          slidesPerView: 1.5,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".swiperTesti", {
+      slidesPerGroup: 1,
+      loop: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+      },
+      breakpoints: {
+        800: {
+          slidesPerView: 2.2,
+          centeredSlides: false,
+        },
+        300: {
+          slidesPerView: 1.5,
+          centeredSlides: false,
+        },
+      },
+    });
+
+    var swiper = new Swiper(".swiperNews", {
+      slidesPerGroup: 1,
+      loop: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      breakpoints: {
+        900: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+        650: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        300: {
+          slidesPerView: 1.5,
+          centeredSlides: false,
+        },
+      },
+    });
+
+
+    const accordionBtns = document.querySelectorAll(".accordionHead");
+
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+
+        let content = this.nextElementSibling;
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      };
+    });
+
+    const accordionBtnPay = document.querySelectorAll(".accordionHeadPay");
+
+    accordionBtnPay.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+
+        let content = this.nextElementSibling;
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      };
+    });
+  </script>
+</body>
+</html>

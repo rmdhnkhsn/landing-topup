@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Landing Page</title>
 </head>
 <body>
+  <section>
     <nav class="navbar">
       <div class="navLeft">
         <img src="assets/img/logo.svg" alt="">
@@ -66,7 +67,7 @@
         </label>
       </div> -->
     </nav>  
-    <section class="content">
+    <div class="content">
       <div class="containerTitle">
         <div class="title">Topup Game <span class="highlight">Terbaik di Indonesia,</span><br/> Bawa Permainanmu ke Level Berikutnya!</div>
         <div class="subtitle">Kini topup game online mlbb, ff, steam dan lainnya jadi lebih mudah. Tersedia juga top up voucher game pc,<br/> dan isi pulsa <span class="highlight">paling murah nomor #1 di Indonesia</span></div>
@@ -736,13 +737,13 @@
                 <label class="floating-label" for="no">No Whatsapp</label>
               </div>
               <div class="note">*Status transaksi akan diirim via whatsapp</div>
-              <a href="" class="btnYellowPrimary py-4 mt-4">Checkout</a>
+              <button type="button" class="btnYellowPrimary w-100 py-4 mt-4" data-bs-toggle="modal" data-bs-target="#checkout">Checkout</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="subContent">
+    </div>
+    <div class="subContent">
       <div class="containerTestimoni">
         <div class="row">
           <div class="col-lg-5">
@@ -952,8 +953,8 @@
           <div class="text2">Anda belum melakukan pembayan, silahkan melakukan pembayaran untuk menyelesaikan transaksi Toupup game, voucher pulsa & paket data hanya di automasuk.id, untuk pertanyaan, kritik atau saran bisa di sampaikan langsung melalui halaman kontak kami.</div>
         </div>
       </div>
-    </section>
-    <section class="footer">
+    </div>
+    <div class="footer">
       <div class="logo">
         <img src="assets/img/logo.svg" alt="">
         <div class="names">KIOSGAMES</div>
@@ -983,138 +984,297 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="mobileNav">
+      <a href="" class="containers active">
+        <i class="bi bi-house-heart-fill"></i>
+        <div class="text">Beranda</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-controller"></i>
+        <div class="text">Product</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-bag-check"></i>
+        <div class="text">Lacak</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-newspaper"></i>
+        <div class="text">Blog</div>
+      </a>
+      <a href="" class="containers">
+        <i class="bi bi-person-lock"></i>
+        <div class="text">Login</div>
+      </a>
+    </div>
+  </section>
+    <!-- MODAL -->
+    <div class="modal fade" id="checkout">
+      <div class="modal-dialog modal-dialog-centered" style="max-width:900px">
+        <div class="modal-content py-5">
+          <button type="button" class="btn-close" onclick="showRate()"></button>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ticketBarcode">
+                <img src="assets/img/logo.svg" alt="" class="logo">
+                <div class="gameNm">Mobile Legend</div>
+                <div class="diamond">328 Diamonds</div>
+                <div class="price">Rp 500.000,-</div>
+                <img src="assets/img/pay/barcode.svg" alt="" class="barcode">
+                <div class="desc">
+                  <div class="text">Menerima pembayaran melalui aplikasi dibawah ini </div>
+                  <div class="logoPay">
+                    <img src="assets/img/pay/dana.svg" alt="">
+                    <img src="assets/img/pay/ovo.svg" alt="">
+                    <img src="assets/img/pay/shopeepay.svg" alt="">
+                    <img src="assets/img/pay/gopay.svg" alt="" style="width: 65px;">
+                  </div>
+                  <div class="text">Dan merchant lain yang menerima pembayaran QRIS</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ticketDetail">
+                <div class="head">Detail Pembelian</div>
+                <div class="containers">
+                  <div class="title">Order ID</div>
+                  <div class="desc">1</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Tanggal</div>
+                  <div class="desc">25 January 2023 - 03:00</div>
+                </div>
+                <div class="containers">
+                  <div class="title">ID Player</div>
+                  <div class="desc">332100185</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Nickname</div>
+                  <div class="desc">xsugandi</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Games</div>
+                  <div class="desc">Mobile Legends</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Produk</div>
+                  <div class="desc">500 Diamonds</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Price</div>
+                  <div class="desc">Rp 500.000,-</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Status</div>
+                  <div class="desc txt-primary">Pending</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Keterangan</div>
+                  <div class="desc">-</div>
+                </div>
+                <div class="containers">
+                  <div class="title">Metode Pembayaran</div>
+                  <div class="desc"><img src="assets/img/pay/qris.svg" alt=""></div>
+                </div>
+                <div class="containers">
+                  <div class="title">Total Harga</div>
+                  <div class="desc txt-primary">Rp 500.000,-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="rate">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content pt-5 pb-4" style="border-radius:20px">
+          <div class="containerRate">
+            <img src="assets/img/logo.svg" alt="" class="logo">
+            <div class="title">Bagaimana kemudahan dalam bertransaksi di kiosgame..?</div>
+            <div class="emoji">
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-1">
+                <label for="emoji-1" class="choiceEmoji">
+                  <img src="assets/img/emoji/1.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-2">
+                <label for="emoji-2" class="choiceEmoji">
+                  <img src="assets/img/emoji/2.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-3">
+                <label for="emoji-3" class="choiceEmoji">
+                  <img src="assets/img/emoji/3.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-4">
+                <label for="emoji-4" class="choiceEmoji">
+                  <img src="assets/img/emoji/4.svg" alt="">
+                </label>
+              </div>
+              <div class="containers">
+                <input type="radio" name="emoji" value="A" class="emoji-radio" id="emoji-5">
+                <label for="emoji-5" class="choiceEmoji">
+                  <img src="assets/img/emoji/5.svg" alt="">
+                </label>
+              </div>
+            </div>
+            <div class="floating-label-content mb-3">
+              <textarea class="form-control floating-input" name="" id="ulasan" placeholder=" " style="min-height:140px"></textarea>
+              <label class="floating-label" for="ulasan">Tulis Ulasan Kamu</label>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+              <a href="" class="btnGrey py-4">Kembali</a>
+            </div>
+            <div class="col-md-6">
+              <a href="" class="btnYellowPrimary py-4">Kirim</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
-    <script>
-      var swiper = new Swiper(".swiperBanner", {
-        slidesPerView: 1.5, 
-        centeredSlides: true,
-        slidesPerGroup: 1,
-        loop: true,
-        slideToClickedSlide: true,
-        spaceBetween: 20,
-        autoplay: {
-          delay: 4000,
+  <script>
+    function showRate() {
+      $('#checkout').modal('hide')
+      $('#rate').modal('show')
+    }
+    var swiper = new Swiper(".swiperBanner", {
+      slidesPerView: 1.5, 
+      centeredSlides: true,
+      slidesPerGroup: 1,
+      loop: true,
+      slideToClickedSlide: true,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 4000,
+      },
+      breakpoints: {
+        950: {
+          slidesPerView: 1.5,
+          centeredSlides: true,
         },
-        breakpoints: {
-          950: {
-            slidesPerView: 1.5,
-            centeredSlides: true,
-          },
-          300: {
-            slidesPerView: 1.2,
-            centeredSlides: true,
-          },
+        300: {
+          slidesPerView: 1.2,
+          centeredSlides: true,
         },
-      });
-      
-      var swiper = new Swiper(".swiperFlashSale", {
-        slidesPerView: 4, 
-        loop: true,
-        slideToClickedSlide: true,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-        autoplay: {
-          delay: 4000,
+      },
+    });
+    
+    var swiper = new Swiper(".swiperFlashSale", {
+      slidesPerView: 4, 
+      loop: true,
+      slideToClickedSlide: true,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      autoplay: {
+        delay: 4000,
+      },
+      breakpoints: {
+        1000: {
+          slidesPerView: 4,
         },
-        breakpoints: {
-          1000: {
-            slidesPerView: 4,
-          },
-          800: {
-            slidesPerView: 3,
-          },
-          400: {
-            slidesPerView: 1.5,
-          },
-          200: {
-            slidesPerView: 1.5,
-          },
+        800: {
+          slidesPerView: 3,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        400: {
+          slidesPerView: 1.5,
         },
-      });
-
-      var swiper = new Swiper(".swiperTesti", {
-        slidesPerGroup: 1,
-        loop: true,
-        spaceBetween: 20,
-        grabCursor: true,
-        autoplay: {
-          delay: 2500,
+        200: {
+          slidesPerView: 1.5,
         },
-        breakpoints: {
-          800: {
-            slidesPerView: 2.2,
-            centeredSlides: false,
-          },
-          300: {
-            slidesPerView: 1.5,
-            centeredSlides: false,
-          },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".swiperTesti", {
+      slidesPerGroup: 1,
+      loop: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+      },
+      breakpoints: {
+        800: {
+          slidesPerView: 2.2,
+          centeredSlides: false,
         },
-      });
-
-      var swiper = new Swiper(".swiperNews", {
-        slidesPerGroup: 1,
-        loop: true,
-        spaceBetween: 20,
-        grabCursor: true,
-        breakpoints: {
-          900: {
-            slidesPerView: 3,
-            centeredSlides: false,
-          },
-          650: {
-            slidesPerView: 2,
-            centeredSlides: false,
-          },
-          300: {
-            slidesPerView: 1.5,
-            centeredSlides: false,
-          },
+        300: {
+          slidesPerView: 1.5,
+          centeredSlides: false,
         },
-      });
+      },
+    });
+
+    var swiper = new Swiper(".swiperNews", {
+      slidesPerGroup: 1,
+      loop: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      breakpoints: {
+        900: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+        650: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        300: {
+          slidesPerView: 1.5,
+          centeredSlides: false,
+        },
+      },
+    });
 
 
-      const accordionBtns = document.querySelectorAll(".accordionHead");
+    const accordionBtns = document.querySelectorAll(".accordionHead");
 
-      accordionBtns.forEach((accordion) => {
-        accordion.onclick = function () {
-          this.classList.toggle("is-open");
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
 
-          let content = this.nextElementSibling;
+        let content = this.nextElementSibling;
 
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        };
-      });
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      };
+    });
 
-      const accordionBtnPay = document.querySelectorAll(".accordionHeadPay");
+    const accordionBtnPay = document.querySelectorAll(".accordionHeadPay");
 
-      accordionBtnPay.forEach((accordion) => {
-        accordion.onclick = function () {
-          this.classList.toggle("is-open");
+    accordionBtnPay.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
 
-          let content = this.nextElementSibling;
+        let content = this.nextElementSibling;
 
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        };
-      });
-    </script>
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      };
+    });
+  </script>
 </body>
 </html>
